@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './header';
+import Footer from './footer'; // Assuming you have a Footer component
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           </div>
         </div>
       </main>
+      <Footer/>
     </div>
 
   );
