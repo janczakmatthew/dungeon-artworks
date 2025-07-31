@@ -3,7 +3,7 @@ function Header() {
         <header className="bg-blue-800 text-white p-4 shadow fixed top-0 w-full">
             <div className="container max-w-[1440px] mx-auto flex justify-between items-center">
                 <div className="logo-container">
-                    <img src="DA_logo_clean.png" alt="Dungeon Artworks Logo" className="h-20 rounded-md bg-gray-500/90" />
+                    <img src="/img/DA_logo_clean.png" alt="Dungeon Artworks Logo" className="h-20 rounded-md bg-gray-500/90" />
                 </div>
                 <nav className="main-nav flex justify-center align-center space-x-4">
                     <a href="#home" className="hover:underline">Home</a>
