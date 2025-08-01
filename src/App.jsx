@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './header';
 import Footer from './footer'; // Assuming you have a Footer component
-import Home from './home'; // Importing the Home component
 import { Outlet } from 'react-router-dom';
 
 function App() {
