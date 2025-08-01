@@ -34,7 +34,7 @@ function Home() {
                         <Card 
                             title="Dark Knight Silhouette"
                             image="/img/dark-knight-silhouette/8 x 10.jpg"
-                            description="A dark and mysterious lair inhabited by a fearsome dragon."
+                            description=""
                             price="6.00"
                         />
                     </div>
