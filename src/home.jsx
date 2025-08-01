@@ -1,4 +1,10 @@
+//Component imports
 import GallerySwiper from "./components/gallery-swiper";
+import HeroSection from "./components/hero-section";
+
+//Data imports
+import artworks from './data/artworks.json'; // Importing the artworks data
+import categories from './data/categories.json'; // Importing categories data
 
 function Home() {
     return (
@@ -9,14 +15,24 @@ function Home() {
                     <p className='text-center text-xl'>Explore unique fantasy artwork designed for tabletop adventures.</p>
                 </div>
             </div>
-            <section class="flex justify-center items-center bg-slate-900 text-stone-200 h-screen py-16 px-6">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold mb-4">About Dungeon Artworks</h2>
-                    <p class="text-gray-400 text-lg">We specialize in high-quality fantasy and dark-themed digital artwork tailored for games, books, and storytelling projects. Whether you're a writer, developer, or world-builder — we bring your vision to life.</p>
-                </div>
-            </section>
+            <GallerySwiper
+                galleryTitle='Shop By Category'
+                galleryDescription='Explore our curated collections of fantasy and horror-themed artworks.'
+                galleryData={categories}
+                bgColor='bg-slate-900'
+                textColor='' />
 
-            <GallerySwiper galleryTitle='Newest' />
+            <HeroSection 
+                bgColor=''
+                textColor=''
+                customStyles='h-screen'/>
+
+            <GallerySwiper 
+            galleryTitle='Newest' 
+            galleryData={artworks}
+            bgColor='bg-slate-900'
+            textColor='text-white'  
+            customStyles='' />
 
 
         </div>

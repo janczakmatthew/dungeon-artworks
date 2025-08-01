@@ -1,4 +1,6 @@
-export default function Card({ title, image, description, price, saleprice, onClick }) {
+import { Link } from "react-router-dom";
+
+export default function Card({ id, title, image, description, price, saleprice, category, gallery, onClick }) {
   return (
     <div className="bg-slate-900 rounded-lg shadow-md overflow-hidden w-full mx-auto group hover:shadow-lg transition-shadow">
       <div className="aspect-[4/3] bg-black overflow-hidden">
@@ -17,20 +19,23 @@ export default function Card({ title, image, description, price, saleprice, onCl
         )}
 
         <div className="flex items-center justify-between mt-4">
-            {price && saleprice ? (
-                <div className="flex items-center">
-                    <span className="text-blue-400 font-medium line-through mr-2">${price}</span>
-                    <span className="text-red-400 font-semibold">${saleprice}</span>
+          {saleprice && price ? (
+            <div className="flex items-center">
+              <span className="text-blue-400 font-medium line-through mr-2">${price}</span>
+              <span className="text-red-400 font-semibold">${saleprice}</span>
             </div>
-            ) : (
-                <span className="text-blue-400 font-semibold">${price}</span>
-                )}
-          <a
-            href="#link"
+          ) : price ? (
+            <span className="text-blue-400 font-semibold">${price}</span>
+          ) : (null)}
+          
+          <Link
+            to="/pdp"
+            state={{ id, name: title, description, price, saleprice, category, gallery }}
             className="bg-blue-600 text-white px-4 py-2 rounded transition-colors invisible group-hover:visible"
           >
             View Details
-          </a>
+          </Link>
+
         </div>
       </div>
     </div>

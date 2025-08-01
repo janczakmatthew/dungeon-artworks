@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "title": "New Arrivals",
+        "link": "/new-arrivals",
+        "image": "https://example.com/new-arrivals.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Best Sellers",
+        "link": "/best-sellers",
+        "image": "https://example.com/best-sellers.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Featured Artworks",
+        "link": "/featured-artworks",
+        "image": "https://example.com/featured-artworks.jpg"
+    },
+    {
+        "id": "4",
+        "title": "On Sale",
+        "link": "/limited-editions",
+        "image": "https://example.com/limited-editions.jpg"
+    },
+    {
+        "id": "5",
+        "title": "Seasonal Collections",
+        "link": "/seasonal-collections",
+        "image": "https://example.com/seasonal-collections.jpg"
+    },
+    {
+        "id": "6",
+        "title": "Horror Art",
+        "link": "/horror-art",
+        "image": "https://example.com/horror-art.jpg"
+    },
+    {
+        "id": "7",
+        "title": "Fantasy Art",
+        "link": "/fantasy-art",
+        "image": "https://example.com/fantasy-art.jpg"
+    },
+    {
+        "id": "8",
+        "title": "Digital Prints",
+        "link": "/digital-prints",
+        "image": "https://example.com/digital-prints.jpg"
+    }
+]

@@ -6,12 +6,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import artworks from '../data/artworks.json'; // <-- DIRECT IMPORT
 import Card from './card'; // Assuming you have a Card component
 
-export default function GallerySwiper({ galleryTitle, galleryDescription }) {
+export default function GallerySwiper({ galleryTitle, galleryDescription, galleryData ,bgColor, textColor, customStyles}) {
     return (
-        <section className="py-12 bg-gray-950 text-stone-200 h-screen flex flex-col justify-center items-center">
+        <section className={`flex flex-col justify-center items-center ${bgColor} ${textColor} py-16 px-6 ` + customStyles}>
             {galleryTitle && (
                 <h2 className="text-3xl font-bold text-center mb-8 border-b">{galleryTitle}</h2>
             )}
@@ -26,7 +25,7 @@ export default function GallerySwiper({ galleryTitle, galleryDescription }) {
                     loop={false}
                     centeredSlides={false}
                     autoplay={{ delay: 4000, disableOnInteraction: false }}
-                    pagination={{ clickable: true }}
+                    //pagination={{ clickable: true }}
                     navigation
                     breakpoints={{
                         640: { slidesPerView: 1 },
@@ -35,16 +34,20 @@ export default function GallerySwiper({ galleryTitle, galleryDescription }) {
                     }}
                     className="max-w-5xl mx-auto"
                 >
-                    {artworks.map((art, i) => (
+                    {galleryData.map((art, i) => (
                         <SwiperSlide key={i}>
                             <Card
+                                id={art.id}
                                 title={art.title}
                                 image={art.image}
                                 description={art.description}
                                 price={art.price}
-                                saleprice={art.salePrice} />
+                                saleprice={art.salePrice}
+                                category={art.category}
+                                gallery={art.gallery} />
                         </SwiperSlide>
                     ))}
+                    
                 </Swiper>
             </div>
         </section>
