@@ -8,7 +8,7 @@ function Header() {
                 <div className="logo-container">
                     <img src="/img/DA_logo_clean.png" alt="Dungeon Artworks Logo" className="h-20 rounded-md bg-gray-500/90" />
                 </div>
-                <nav className="main-nav flex justify-center align-center space-x-4">
+                <nav className="main-nav flex justify-center align-center -ml-20 space-x-4">
                     <Link to="/" className="hover:underline">Home</Link>
                     <Link to="/artwork" className="hover:underline">Artwork/Collections</Link>
                 </nav>
