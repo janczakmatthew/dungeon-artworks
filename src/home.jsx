@@ -3,7 +3,7 @@ import GallerySwiper from "./components/gallery-swiper";
 function Home() {
     return (
         <div>
-            <div className='max-w-[1440px] flex justify-center items-center h-screen mx-auto'>
+            <div className='max-w-[1440px] flex justify-center items-center h-screen -mt-[130px] mx-auto'>
                 <div>
                     <h1 className='text-5xl text-center font-bold py-8 px-4'>Welcome to Dungeon Artworks</h1>
                     <p className='text-center text-xl'>Explore unique fantasy artwork designed for tabletop adventures.</p>
@@ -16,7 +16,7 @@ function Home() {
                 </div>
             </section>
 
-            <GallerySwiper galleryTitle='Newest Artwork' />
+            <GallerySwiper galleryTitle='Newest' />
 
 
         </div>

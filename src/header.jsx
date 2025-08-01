@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 function Header() {
     return (
         <header className="bg-blue-800 text-white p-4 shadow fixed top-0 w-full">
@@ -6,9 +9,8 @@ function Header() {
                     <img src="/img/DA_logo_clean.png" alt="Dungeon Artworks Logo" className="h-20 rounded-md bg-gray-500/90" />
                 </div>
                 <nav className="main-nav flex justify-center align-center space-x-4">
-                    <a href="#home" className="hover:underline">Home</a>
-                    <a href="#about" className="hover:underline">Artwork/Collections</a>
-                    <a href="#services" className="hover:underline">Services</a>
+                    <Link to="/" className="hover:underline">Home</Link>
+                    <Link to="/artwork" className="hover:underline">Artwork/Collections</Link>
                 </nav>
 
                 <nav className="space-x-4 flex items-center align-center">
