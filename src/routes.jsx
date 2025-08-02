@@ -5,6 +5,7 @@ import Home from './home';
 import ArtworkPages from './pages/Artwork';
 import About from './pages/About'; // Import the About component
 import Contact from './pages/Contact'; // Import the Contact component
+import Category from './pages/Category'; // Import the Category component
 import PDP from './pages/PDP';
 
 function AppRoutes() {
@@ -16,6 +17,7 @@ function AppRoutes() {
           <Route path="artwork" element={<ArtworkPages />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="category" element={<Category />} />
           <Route path="pdp" element={<PDP />} />
           <Route path="*" element={<div>Page Not Found</div>} />
         </Route>

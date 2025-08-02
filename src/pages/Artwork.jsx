@@ -18,7 +18,7 @@ const ArtworkPages = () => {
 
         <ProductListRow 
           catergoryTitle='Featured Artworks'
-          catergoryLink='#Link'/>
+          catergoryLink='/category'/>
 
           <ProductListRow 
           catergoryTitle='New Arrivals'
