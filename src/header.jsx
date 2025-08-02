@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
     return (
-        <header className="bg-blue-800 text-white p-4 shadow fixed top-0 w-full">
+        <header className="bg-blue-800 text-white p-4 shadow fixed top-0 w-full z-50">
             <div className="container max-w-[1440px] mx-auto flex justify-between items-center">
                 <div className="logo-container">
                     <img src="/img/DA_logo_clean.png" alt="Dungeon Artworks Logo" className="h-20 rounded-md bg-gray-500/90" />
