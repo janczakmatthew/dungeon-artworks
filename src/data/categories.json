@@ -3,25 +3,25 @@
         "id": "1",
         "title": "New Arrivals",
         "link": "/new-arrivals",
-        "image": "https://example.com/new-arrivals.jpg"
+        "image": "/img/new-arrivals.jpg"
     },
     {
         "id": "2",
         "title": "Best Sellers",
         "link": "/best-sellers",
-        "image": "https://example.com/best-sellers.jpg"
+        "image": "/img/best-seller.jpg"
     },
     {
         "id": "3",
         "title": "Featured Artworks",
         "link": "/featured-artworks",
-        "image": "https://example.com/featured-artworks.jpg"
+        "image": "/img/featured.jpg"
     },
     {
         "id": "4",
         "title": "On Sale",
         "link": "/limited-editions",
-        "image": "https://example.com/limited-editions.jpg"
+        "image": "/img/on-sale.jpg"
     },
     {
         "id": "5",

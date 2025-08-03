@@ -5,9 +5,9 @@ import Card from "./card";
 
 import artworks from "../data/artworks.json"; // Assuming artworks data is in this file
 
-const ProductListRow = ({ catergoryTitle, catergoryLink }) => {
+const ProductListRow = ({ catergoryTitle, catergoryLink, bgColor, textColor, customStyles }) => {
     return (
-        <div>
+        <div className={`product-list-row ${bgColor} ${textColor} ${customStyles} max-w-[1200px] mx-auto w-full px-4 py-6 rounded-xl`}>
             <div className="flex justify-between items-center py-4">
                 {catergoryTitle && (
                     <h2 class="text-2xl font-bold tracking-tight text-white">{catergoryTitle}</h2>

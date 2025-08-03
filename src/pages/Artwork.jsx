@@ -16,17 +16,29 @@ const ArtworkPages = () => {
           customStyles="min-h-[300px]"
         />
 
-        <ProductListRow 
-          catergoryTitle='Featured Artworks'
-          catergoryLink='/category'/>
+        <div className='flex flex-col justify-center items-center w-full max-w-[1200px] mx-auto mt-10'>
 
-          <ProductListRow 
-          catergoryTitle='New Arrivals'
-          catergoryLink='#Link'/>
+          <ProductListRow
+            catergoryTitle='Featured Artworks'
+            catergoryLink='/category'
+            bgColor="bg-slate-700"
+            textColor="text-white"
+            customStyles="" />
 
-        <ProductListRow  
-        catergoryTitle='Dead By Daylight'
-        catergoryLink='#Link'/>
+          <ProductListRow
+            catergoryTitle='New Arrivals'
+            catergoryLink='/category' 
+            bgColor="bg-slate-800"
+            textColor="text-white"
+            customStyles="mt-10"/>
+
+          <ProductListRow
+            catergoryTitle='Dead By Daylight'
+            catergoryLink='/category' 
+            bgColor="bg-slate-700"
+            textColor="text-white"
+            customStyles="my-10"/>
+        </div>
       </div>
 
     </div>
