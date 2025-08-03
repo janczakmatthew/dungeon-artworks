@@ -24,7 +24,7 @@ export default function GallerySwiper({ galleryTitle, galleryDescription, galler
                     slidesPerView={1}
                     loop={false}
                     centeredSlides={false}
-                    autoplay={{ delay: 4000, disableOnInteraction: false }}
+                   // autoplay={{ delay: 4000, disableOnInteraction: false }}
                     //pagination={{ clickable: true }}
                     navigation
                     breakpoints={{
