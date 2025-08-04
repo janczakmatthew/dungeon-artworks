@@ -24,16 +24,16 @@ const PDP = () => {
                         <ol role="list" class="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
                             <li>
                                 <div class="flex items-center">
-                                    <Link to="/" class="mr-2 text-sm font-medium text-gray-900 hover:text-blue-400">Home</Link>
-                                    <svg viewBox="0 0 16 20" width="16" height="20" fill="currentColor" aria-hidden="true" class="text-gray-900 h-5 w-4">
+                                    <Link to="/" class="mr-2 text-sm font-medium text-gray-300 hover:text-blue-400">Home</Link>
+                                    <svg viewBox="0 0 16 20" width="16" height="20" fill="currentColor" aria-hidden="true" class="text-gray-300 h-5 w-4">
                                         <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
                                     </svg>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-center">
-                                    <Link to="/" class="mr-2 text-sm font-medium text-gray-900 hover:text-blue-400">{category}</Link>
-                                    <svg viewBox="0 0 16 20" width="16" height="20" fill="currentColor" aria-hidden="true" class="h-5 w-4 text-gray-900">
+                                    <Link to="/" class="mr-2 text-sm font-medium text-gray-300 hover:text-blue-400">{category}</Link>
+                                    <svg viewBox="0 0 16 20" width="16" height="20" fill="currentColor" aria-hidden="true" class="h-5 w-4 text-gray-300">
                                         <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
                                     </svg>
                                 </div>
