@@ -17,8 +17,8 @@ const PDP = () => {
     const { id, title, description, price, saleprice, category, gallery } = state;
 
     return (
-        <div class="pb-20 px-20 max-w-[1440px]">
-            <div class="pt-6">
+        <div class="pb-20 px-20 flex justify-center">
+            <div class="pt-6 max-w-[1440px]">
                 <div className='bg-blue-800 text-white p-4 rounded-lg mb-6'>
                     <nav aria-label="Breadcrumb">
                         <ol role="list" class="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
