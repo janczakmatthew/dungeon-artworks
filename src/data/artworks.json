@@ -7,7 +7,7 @@
         "price": "6.00",
         "salePrice": null,
         "category": "Horror Art",
-        "link": "https://example.com/the-silent-nurse",
+        "link": "/pdp",
         "gallery": [
             "/img/the-silent-nurse/silent-nurse-thumbnail-one.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-two.jpg",
@@ -23,6 +23,7 @@
         "price": "6.00",
         "salePrice": null,
         "category": "Horror Art",
+        "link": "/pdp",
         "gallery": [
             "/img/the-silent-nurse/silent-nurse-thumbnail-one.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-two.jpg",
@@ -38,6 +39,7 @@
         "price": "6.00",
         "salePrice": "4.00",
         "categorty": "Horror Art",
+        "link": "/pdp",
         "gallery": [
             "/img/the-silent-nurse/silent-nurse-thumbnail-one.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-two.jpg",
@@ -53,6 +55,7 @@
         "price": "6.00",
         "salePrice": null,
         "category": "Horror Art",
+        "link": "/pdp",
         "gallery": [
             "/img/the-silent-nurse/silent-nurse-thumbnail-one.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-two.jpg",
@@ -68,11 +71,12 @@
         "price": "6.00",
         "salePrice": null,
         "category": "Horror Art",
+        "link": "/pdp",
         "gallery": [
             "/img/the-silent-nurse/silent-nurse-thumbnail-one.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-two.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-three.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-four.jpg"
-        ]
+        ] 
     }
 ]

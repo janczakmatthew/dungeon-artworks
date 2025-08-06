@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Card({ id, title, image, description, price, saleprice, category, gallery, onClick }) {
+export default function Card({ id, title, image, description, price, saleprice, category, gallery, link, onClick }) {
   return (
     <div className="bg-slate-900 rounded-lg shadow-md overflow-hidden w-full mx-auto group hover:shadow-lg transition-shadow">
       <div className="aspect-[4/3] bg-black overflow-hidden">
@@ -29,8 +29,8 @@ export default function Card({ id, title, image, description, price, saleprice, 
           ) : (null)}
           
           <Link
-            to="/pdp"
-            state={{ id, name: title, description, price, saleprice, category, gallery }}
+            to={link}
+            state={{ id, title, description, price, saleprice, category, gallery }}
             className="bg-blue-600 text-white px-4 py-2 rounded transition-colors invisible group-hover:visible"
           >
             View Details

@@ -14,7 +14,7 @@ const PDP = () => {
         return <div className="text-center text-red-500">No product data available.</div>;
     }
 
-    const { id, name, description, price, saleprice, category, gallery } = state;
+    const { id, title, description, price, saleprice, category, gallery } = state;
 
     return (
         <div class="pb-20 px-20 max-w-[1440px]">
@@ -40,7 +40,7 @@ const PDP = () => {
                             </li>
 
                             <li class="text-sm">
-                                <span aria-current="page" class="font-medium text-gray-200 hover:text-gray-300 ">{name}</span>
+                                <span aria-current="page" class="font-medium text-gray-200 hover:text-gray-300 ">{title}</span>
                             </li>
                         </ol>
                     </nav>
@@ -55,7 +55,7 @@ const PDP = () => {
 
                 <div class="bg-slate-700 rounded-xl mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24">
                     <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
-                        <h1 class="text-2xl font-bold tracking-tight text-blue-400 sm:text-3xl">{name || "Product Name"}</h1>
+                        <h1 class="text-2xl font-bold tracking-tight text-blue-400 sm:text-3xl">{title || "Product Name"}</h1>
                     </div>
 
                     <div class="mt-4 lg:row-span-3 lg:mt-0">

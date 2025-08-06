@@ -27,7 +27,8 @@ const ProductListRow = ({ catergoryTitle, catergoryLink, bgColor, textColor, cus
                         image={product.image}
                         description={product.description}
                         price={product.price}
-                        saleprice={product.salePrice} />
+                        saleprice={product.salePrice} 
+                        link={product.link}/>
 
                 ))}
             </div>

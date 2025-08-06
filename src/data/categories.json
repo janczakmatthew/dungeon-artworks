@@ -2,7 +2,7 @@
     {
         "id": "1",
         "title": "New Arrivals",
-        "link": "/new-arrivals",
+        "link": "category",
         "image": "/img/new-arrivals.jpg"
     },
     {

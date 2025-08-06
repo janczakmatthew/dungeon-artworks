@@ -44,7 +44,8 @@ export default function GallerySwiper({ galleryTitle, galleryDescription, galler
                                 price={art.price}
                                 saleprice={art.salePrice}
                                 category={art.category}
-                                gallery={art.gallery} />
+                                gallery={art.gallery}
+                                link={art.link} />
                         </SwiperSlide>
                     ))}
                     
