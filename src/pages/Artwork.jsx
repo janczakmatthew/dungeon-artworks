@@ -3,6 +3,8 @@ import React from 'react';
 import ProductListRow from '../components/product-list-row';
 import HeroHeader from '../components/hero-header';
 
+import categories from '../data/categories.json'; // Importing categories data
+
 const ArtworkPages = () => {
   return (
     <div>
@@ -21,13 +23,15 @@ const ArtworkPages = () => {
           <ProductListRow
             catergoryTitle='Featured Artworks'
             catergoryLink='/category'
+            type='featured'
             bgColor="bg-slate-700"
             textColor="text-white"
             customStyles="" />
 
           <ProductListRow
             catergoryTitle='New Arrivals'
-            catergoryLink='/category' 
+            catergoryLink='/category'
+            type='new' 
             bgColor="bg-slate-800"
             textColor="text-white"
             customStyles="mt-10"/>
@@ -35,6 +39,7 @@ const ArtworkPages = () => {
           <ProductListRow
             catergoryTitle='Dead By Daylight'
             catergoryLink='/category' 
+            type='dbd'
             bgColor="bg-slate-700"
             textColor="text-white"
             customStyles="my-10"/>
