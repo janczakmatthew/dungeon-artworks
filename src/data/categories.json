@@ -46,5 +46,11 @@
         "title": "Digital Prints",
         "link": "/digital-prints",
         "image": "https://example.com/digital-prints.jpg"
+    },
+    {
+        "id":"9",
+        "title": "Dead by Daylight",
+        "link": "/dead-by-daylight",
+        "image": "https://example.com/dead-by-daylight.jpg"
     }
 ]

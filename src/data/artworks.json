@@ -6,14 +6,16 @@
         "description": "Inspired by the haunting presence of The Nurse from Dead by Daylight, 'The Silent Nurse' is a gothic horror art piece that captures the eerie stillness and tragic elegance of one of the game’s most iconic killers. This stained glass-style silhouette evokes the oppressive atmosphere of haunted hospitals and cursed cathedrals — a perfect tribute to the silent dread she brings to every trial.",
         "price": "6.00",
         "salePrice": null,
-        "category": "Horror Art",
+        "category": ["Horror Art", "Dead by Daylight"],
         "link": "/pdp",
         "gallery": [
             "/img/the-silent-nurse/silent-nurse-thumbnail-one.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-two.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-three.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-four.jpg"
-        ]
+        ],
+        "featured": true,
+        "dateAdded": "2025-08-06"
     }, 
     {
         "id": 2,
@@ -22,14 +24,17 @@
         "description": "This digital art print features a fearsome samurai warrior with a stained-glass glow and a haunting presence — inspired by Dead by Daylight’s Oni and classic horror-meets-feudal design. It’s a bold, atmospheric piece that combines tradition with terror. Perfect for horror game fans, lovers of Japanese mythology, or anyone wanting a statement piece that blends beauty with dread.",
         "price": "6.00",
         "salePrice": null,
-        "category": "Horror Art",
+        "category": ["Horror Art", "Dead by Daylight"],
         "link": "/pdp",
         "gallery": [
             "/img/the-silent-nurse/silent-nurse-thumbnail-one.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-two.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-three.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-four.jpg"
-        ]
+        ],
+        "featured": true,
+        "dateAdded": "2025-08-06"
+        
     }, 
     {
         "id": 3,
@@ -38,14 +43,16 @@
         "description": "This digital art print features a dark knight silhouette, inspired by the haunting presence of The Knight from Dead by Daylight. The piece captures the eerie stillness and tragic elegance of one of the game’s most iconic killers, evoking the oppressive atmosphere of haunted castles and cursed cathedrals.",
         "price": "6.00",
         "salePrice": "4.00",
-        "categorty": "Horror Art",
+        "category": "Horror Art",
         "link": "/pdp",
         "gallery": [
             "/img/the-silent-nurse/silent-nurse-thumbnail-one.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-two.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-three.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-four.jpg"
-        ]
+        ],
+        "featured": true,
+        "dateAdded": "2025-08-06"
     },
     {
         "id": 4,
@@ -61,7 +68,9 @@
             "/img/the-silent-nurse/silent-nurse-thumbnail-two.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-three.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-four.jpg"
-        ]
+        ],
+        "featured": false,
+        "dateAdded": "2025-08-06"
     },
     {
         "id": 5,
@@ -77,6 +86,8 @@
             "/img/the-silent-nurse/silent-nurse-thumbnail-two.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-three.jpg",
             "/img/the-silent-nurse/silent-nurse-thumbnail-four.jpg"
-        ] 
+        ] ,
+        "featured": false,
+        "dateAdded": "2025-08-06"
     }
 ]

@@ -3,7 +3,6 @@ import React from 'react';
 import ProductListRow from '../components/product-list-row';
 import HeroHeader from '../components/hero-header';
 
-import categories from '../data/categories.json'; // Importing categories data
 
 const ArtworkPages = () => {
   return (
@@ -37,9 +36,9 @@ const ArtworkPages = () => {
             customStyles="mt-10"/>
 
           <ProductListRow
-            catergoryTitle='Dead By Daylight'
+            catergoryTitle='Dead by Daylight'
             catergoryLink='/category' 
-            type='dbd'
+            type='category'
             bgColor="bg-slate-700"
             textColor="text-white"
             customStyles="my-10"/>
