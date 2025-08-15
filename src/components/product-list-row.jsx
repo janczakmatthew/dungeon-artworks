@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Card from "./card";
 
-import categories from '../data/categories.json'; // Importing categories data
+//import categories from '../data/categories.json'; // Importing categories data
 import artworks from '../data/artworks.json'; // Importing artworks data
 import filterProducts from "../components/filter-product-data";
 
