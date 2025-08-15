@@ -2,7 +2,7 @@ import HeroHeader from "../components/hero-header";
 import ProductGrid from "../components/product-grid";
 import filterProducts from "../components/filter-product-data";
 
-import artworks from "../data/artworks.json";   
+import artworks from "../data/artworks.json";
 
 import { useLocation } from 'react-router-dom';
 
@@ -13,9 +13,17 @@ function Category() {
 
     const { title } = state;
 
-   const filteredArtworks = filterProducts(artworks, "category", title);
+    let filteredArtworks = [];
 
-    console.log("Location State:", state);
+    if (title === 'Featured Artworks') {
+        filteredArtworks = filterProducts(artworks, "featured", title);
+    } else if (title === 'New Arrivals') {
+        filteredArtworks = filterProducts(artworks, "new", title);
+    } else {
+        filteredArtworks = filterProducts(artworks, "category", title);
+    }
+
+    console.log("Filtered Artworks in Category Page:", filteredArtworks);
     return (
         <div className="category-page bg-gray-800 text-white min-h-screen">
             <HeroHeader
@@ -27,7 +35,13 @@ function Category() {
                 customStyles="min-h-[300px]"
             />
 
-            <ProductGrid products={state ? filteredArtworks : ['test']} />
+            <div className="flex justify-center mt-10">
+                <div className="max-w-[1440px]">
+                    <ProductGrid products={filteredArtworks} />
+                </div>
+            </div>
+
+
         </div>
     );
 }

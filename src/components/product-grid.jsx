@@ -4,11 +4,12 @@ import Card from './card';
 
 
 function ProductGrid({ products }) {
+
+
+
     return (
         <div className="product-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <p>This is a product grid</p>
-            <p>products: {JSON.stringify(products)}</p>
-            {/* {products.map((product) => (
+             {products.map((product) => (
                 <Card
                     key={product.id}
                     id={product.id}
@@ -21,7 +22,7 @@ function ProductGrid({ products }) {
                     gallery={product.gallery}
                     link={product.link}
                 />
-            ))} */}
+            ))}
         </div>
     );
 }

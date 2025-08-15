@@ -11,7 +11,7 @@ function App() {
       <Header />
       <ScrollToTop /> {/* Add the ScrollToTop component here */}
       {/* Other components and content go here */}
-      <main className="bg-gray-950 text-white min-h-screen pt-[130px] ">
+      <main className="bg-gray-950 text-white min-h-screen lg:pt-[115px] pt-[130px] ">
         <Outlet />
       </main>
       <Footer/>

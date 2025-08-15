@@ -11,7 +11,7 @@ const ProductListRow = ({ catergoryTitle, catergoryLink, type, bgColor, textColo
 
     const filteredArtworks = filterProducts(artworks, type, catergoryTitle);
 
-    console.log("Filtered Artworks:", filteredArtworks);
+   //console.log("Filtered Artworks:", filteredArtworks);
 
     return (
         <div className={`product-list-row ${bgColor} ${textColor} ${customStyles} max-w-[1200px] mx-auto w-full px-4 py-6 rounded-xl`}>
