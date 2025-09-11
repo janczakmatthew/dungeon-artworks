@@ -1,16 +1,32 @@
 {
   "files": {
     "main.css": "/dungeon-artworks/static/css/main.c6387ea0.css",
-    "main.js": "/dungeon-artworks/static/js/main.58d96dfd.js",
+    "main.js": "/dungeon-artworks/static/js/main.b360c4e2.js",
     "static/js/453.2af55a4f.chunk.js": "/dungeon-artworks/static/js/453.2af55a4f.chunk.js",
+    "static/media/Template - 16 x 20.png": "/dungeon-artworks/static/media/Template - 16 x 20.dca90a088611f2589446.png",
+    "static/media/8x10.jpg": "/dungeon-artworks/static/media/8x10.5cdc34e647c6985202e2.jpg",
+    "static/media/Template - 24 x 36.jpg": "/dungeon-artworks/static/media/Template - 24 x 36.a0999ed0dad7eb226b7b.jpg",
+    "static/media/24 x 36.jpg": "/dungeon-artworks/static/media/24 x 36.00397717f7b811b8606d.jpg",
     "static/media/homepage-hero.jpg": "/dungeon-artworks/static/media/homepage-hero.24926e453d13db31112c.jpg",
+    "static/media/Template - 18 x 24.jpg": "/dungeon-artworks/static/media/Template - 18 x 24.811160eb0ce9109785b9.jpg",
+    "static/media/18 x 24.jpg": "/dungeon-artworks/static/media/18 x 24.304108630ec3aae9e34e.jpg",
+    "static/media/8 x 10.jpg": "/dungeon-artworks/static/media/8 x 10.83802467590e661546a8.jpg",
+    "static/media/silent-nurse.mp4": "/dungeon-artworks/static/media/silent-nurse.8b3d88fdc6014cf66b0c.mp4",
+    "static/media/Template - 11 x 14.jpg": "/dungeon-artworks/static/media/Template - 11 x 14.627daab8f5fdbfaa1607.jpg",
+    "static/media/16 x 20.jpg": "/dungeon-artworks/static/media/16 x 20.57e8ba856dc491b308b9.jpg",
+    "static/media/11 x 14.jpg": "/dungeon-artworks/static/media/11 x 14.154605d2f0d75d39aaef.jpg",
+    "static/media/silent-nurse-thumbnail-two.jpg": "/dungeon-artworks/static/media/silent-nurse-thumbnail-two.2d0c27d3fe9d2b47cbc1.jpg",
+    "static/media/silent-nurse-thumbnail-three.jpg": "/dungeon-artworks/static/media/silent-nurse-thumbnail-three.6d32f14031d9a5eba067.jpg",
+    "static/media/silent-nurse-thumbnail-four.jpg": "/dungeon-artworks/static/media/silent-nurse-thumbnail-four.16a1d71a5df1189d4687.jpg",
+    "static/media/silent-nurse-thumbnail-five.jpg": "/dungeon-artworks/static/media/silent-nurse-thumbnail-five.aab09d3dcbadbdb1428f.jpg",
+    "static/media/silent-nurse-thumbnail-one.jpg": "/dungeon-artworks/static/media/silent-nurse-thumbnail-one.14838d5c5f497e3eac9e.jpg",
     "index.html": "/dungeon-artworks/index.html",
     "main.c6387ea0.css.map": "/dungeon-artworks/static/css/main.c6387ea0.css.map",
-    "main.58d96dfd.js.map": "/dungeon-artworks/static/js/main.58d96dfd.js.map",
+    "main.b360c4e2.js.map": "/dungeon-artworks/static/js/main.b360c4e2.js.map",
     "453.2af55a4f.chunk.js.map": "/dungeon-artworks/static/js/453.2af55a4f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6387ea0.css",
-    "static/js/main.58d96dfd.js"
+    "static/js/main.b360c4e2.js"
   ]
 }
