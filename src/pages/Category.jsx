@@ -1,6 +1,6 @@
 import HeroHeader from "../components/hero-header";
 import ProductGrid from "../components/product-grid";
-import filterProducts from "../components/filter-product-data";
+import filterProducts from "../utils/filter-product-data";
 
 import artworks from "../data/artworks.json";
 

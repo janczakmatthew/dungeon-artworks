@@ -5,7 +5,7 @@ import Card from "./card";
 
 //import categories from '../data/categories.json'; // Importing categories data
 import artworks from '../data/artworks.json'; // Importing artworks data
-import filterProducts from "../components/filter-product-data";
+import filterProducts from "../utils/filter-product-data";
 
 const ProductListRow = ({ catergoryTitle, catergoryLink, type, bgColor, textColor, customStyles }) => {
 
