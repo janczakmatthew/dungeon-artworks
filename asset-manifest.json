@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dungeon-artworks/static/css/main.3d3d85b2.css",
-    "main.js": "/dungeon-artworks/static/js/main.8a4a8220.js",
+    "main.css": "/dungeon-artworks/static/css/main.c6387ea0.css",
+    "main.js": "/dungeon-artworks/static/js/main.58d96dfd.js",
     "static/js/453.2af55a4f.chunk.js": "/dungeon-artworks/static/js/453.2af55a4f.chunk.js",
     "static/media/homepage-hero.jpg": "/dungeon-artworks/static/media/homepage-hero.24926e453d13db31112c.jpg",
     "index.html": "/dungeon-artworks/index.html",
-    "main.3d3d85b2.css.map": "/dungeon-artworks/static/css/main.3d3d85b2.css.map",
-    "main.8a4a8220.js.map": "/dungeon-artworks/static/js/main.8a4a8220.js.map",
+    "main.c6387ea0.css.map": "/dungeon-artworks/static/css/main.c6387ea0.css.map",
+    "main.58d96dfd.js.map": "/dungeon-artworks/static/js/main.58d96dfd.js.map",
     "453.2af55a4f.chunk.js.map": "/dungeon-artworks/static/js/453.2af55a4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d3d85b2.css",
-    "static/js/main.8a4a8220.js"
+    "static/css/main.c6387ea0.css",
+    "static/js/main.58d96dfd.js"
   ]
 }
