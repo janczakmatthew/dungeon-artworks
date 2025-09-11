@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 
-export default function Card({ id, title, image, description, price, saleprice, category, gallery, link, onClick }) {
+import { importProductImage } from "../utils/import-product-image";
+
+export default function Card({ id, type, title, description, price, saleprice, category, image_folder, image, gallery, link, onClick }) {
+
+const mainImage = importProductImage(type, image_folder, image);
+
   return (
     <div className="bg-slate-900 rounded-lg shadow-md overflow-hidden w-full mx-auto group hover:shadow-lg transition-shadow">
       <div className="aspect-[4/3] bg-black overflow-hidden">
         <img
-          src={image}
+          src={mainImage}
           alt={title || 'Artwork Image'}
           className="w-full h-full object-contain object-top transition-transform duration-300 group-hover:scale-105"
         />
@@ -30,7 +35,7 @@ export default function Card({ id, title, image, description, price, saleprice, 
           
           <Link
             to={link}
-            state={{ id, title, description, price, saleprice, category, gallery }}
+            state={{ id, type, title, description, price, saleprice, category, image_folder, image, gallery }}
             className="bg-blue-600 text-white px-4 py-2 rounded transition-colors invisible group-hover:visible"
           >
             View Details

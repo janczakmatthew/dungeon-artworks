@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Link, useLocation } from 'react-router-dom';
 
+import { importProductImage } from "../utils/import-product-image";
+
 const PDP = () => {
 
     const location = useLocation();
@@ -14,7 +16,13 @@ const PDP = () => {
         return <div className="text-center text-red-500">No product data available.</div>;
     }
 
-    const { id, title, description, price, saleprice, category, gallery } = state;
+    const { id, type, title, description, price, saleprice, category, image_folder, image, gallery } = state;
+
+    console.log("PDP State:", state);
+
+    // Import images using Webpack
+    //const mainImage = importProductImage(type, image_folder, image);
+    const galleryImages = gallery.map(img => importProductImage(type, image_folder, img));
 
     return (
         <div class="pb-20 px-20 flex justify-center">
@@ -46,10 +54,10 @@ const PDP = () => {
                     </nav>
 
                     <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
-                        <img src={gallery[2]} alt="Two each of gray, white, and black shirts laying flat." class="row-span-2 aspect-3/4 size-full rounded-lg object-cover max-lg:hidden" />
-                        <img src={gallery[0]} alt="Model wearing plain black basic tee." class="col-start-2 max-h-[256px] bg-slate-900 aspect-3/2 size-full rounded-lg object-contain max-lg:hidden" />
-                        <img src={gallery[1]} alt="Model wearing plain gray basic tee." class="col-start-2 max-h-[256px] bg-slate-900 row-start-2 aspect-3/2 size-full rounded-lg object-contain max-lg:hidden" />
-                        <img src={gallery[3]} alt="Model wearing plain white basic tee." class="row-span-2 aspect-4/5 size-full object-cover sm:rounded-lg lg:aspect-3/4" />
+                        <img src={galleryImages[2]} alt="Two each of gray, white, and black shirts laying flat." class="row-span-2 aspect-3/4 size-full rounded-lg object-cover max-lg:hidden" />
+                        <img src={galleryImages[0]} alt="Model wearing plain black basic tee." class="col-start-2 max-h-[256px] bg-slate-900 aspect-3/2 size-full rounded-lg object-contain max-lg:hidden" />
+                        <img src={galleryImages[1]} alt="Model wearing plain gray basic tee." class="col-start-2 max-h-[256px] bg-slate-900 row-start-2 aspect-3/2 size-full rounded-lg object-contain max-lg:hidden" />
+                        <img src={galleryImages[3]} alt="Model wearing plain white basic tee." class="row-span-2 aspect-4/5 size-full object-cover sm:rounded-lg lg:aspect-3/4" />
                     </div>
                 </div>
 

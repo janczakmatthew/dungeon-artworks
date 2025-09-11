@@ -30,8 +30,10 @@ const ProductListRow = ({ catergoryTitle, catergoryLink, type, bgColor, textColo
                 {filteredArtworks.slice(0, 4).map((product) => (
                     <Card
                         id={product.id}
+                        type={product.type}
                         title={product.title}
                         image={product.image}
+                        image_folder={product.image_folder}
                         description={product.description}
                         price={product.price}
                         saleprice={product.salePrice}

@@ -38,8 +38,10 @@ export default function GallerySwiper({ galleryTitle, galleryDescription, galler
                         <SwiperSlide key={i}>
                             <Card
                                 id={art.id}
+                                type={art.type}
                                 title={art.title}
                                 image={art.image}
+                                image_folder={art.image_folder}
                                 description={art.description}
                                 price={art.price}
                                 saleprice={art.salePrice}

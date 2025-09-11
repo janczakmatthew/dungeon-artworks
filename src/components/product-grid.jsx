@@ -13,8 +13,10 @@ function ProductGrid({ products }) {
                 <Card
                     key={product.id}
                     id={product.id}
+                    type={product.type}
                     title={product.title}
                     image={product.image}
+                    image_folder={product.image_folder}
                     description={product.description}
                     price={product.price}
                     saleprice={product.salePrice}
