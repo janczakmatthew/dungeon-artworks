@@ -14,7 +14,7 @@ function Home() {
         <div>
             <div className='flex justify-center items-center h-screen -mt-[130px] mx-auto'>
                 <div className="bg-cover bg-center w-full h-full flex flex-col justify-center items-center text-white" style={{ backgroundImage: `url(${heroImage})` }}>
-                    <div className='max-w-xl bg-black/50 text-center rounded-lg shadow-lg'>
+                    <div className='max-w-xl bg-black/50 p-10 text-center rounded-lg shadow-lg'>
                         <h1 className='text-5xl text-center font-bold pb-7'>Welcome to <br/> Dungeon Artworks</h1>
                         <p className='text-center text-xl'>Explore unique fantasy artwork from <br/> your favorite board game or video game.</p>
                     </div>
