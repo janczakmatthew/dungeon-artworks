@@ -39,7 +39,9 @@ const ProductListRow = ({ catergoryTitle, catergoryLink, type, bgColor, textColo
                         saleprice={product.salePrice}
                         category={product.category}
                         gallery={product.gallery}
-                        link={product.link} />
+                        link={product.link} 
+                        hide_btn={true}
+                        />
 
                 ))}
             </div>
