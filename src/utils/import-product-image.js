@@ -1,7 +1,10 @@
 export function importProductImage(type, folder, filename) {
-  console.log("Importing image:", {type, folder, filename});
-  if( type !== 'product' ) {
+  if( type === 'product' ) {
+    return require(`../assets/products/${folder}/${filename}`);
+  } else if ( type === 'category' ) {
+    return require(`../assets/category/${filename}`);
+  }else {
     return null;
   }
-  return require(`../assets/products/${folder}/${filename}`);
+  
 }

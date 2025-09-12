@@ -1,27 +1,31 @@
 [
     {
         "id": "1",
+        "type": "category",
         "title": "New Arrivals",
         "link": "category",
-        "image": "/img/new-arrivals.jpg"
+        "image": "new-arrivals.png"
     },
     {
         "id": "2",
+        "type": "category",
         "title": "Best Sellers",
         "link": "/best-sellers",
-        "image": "/img/best-seller.jpg"
+        "image": "best-seller.jpg"
     },
     {
         "id": "3",
+        "type": "category",
         "title": "Featured Artworks",
         "link": "/featured-artworks",
-        "image": "/img/featured.jpg"
+        "image": "featured.jpg"
     },
     {
         "id": "4",
+        "type": "category",
         "title": "On Sale",
         "link": "/limited-editions",
-        "image": "/img/on-sale.jpg"
+        "image": "on-sale.jpg"
     },
     {
         "id": "5",
