@@ -2,17 +2,17 @@ import { Link } from "react-router-dom";
 
 import { importProductImage } from "../utils/import-product-image";
 
-export default function Card({ id, type, title, description, price, saleprice, category, image_folder, image, gallery, link, onClick }) {
+export default function Card({ id, type, title, description, price, saleprice, category, image_folder, image, gallery, link, hide_btn, onClick }) {
 
 const mainImage = importProductImage(type, image_folder, image);
 
   return (
-    <div className="bg-slate-900 rounded-lg shadow-md overflow-hidden w-full mx-auto group hover:shadow-lg transition-shadow">
-      <div className="aspect-[4/3] bg-black overflow-hidden">
+    <div className="bg-gray-700 rounded-lg shadow-md overflow-hidden w-full mx-auto group hover:shadow-lg transition-shadow">
+      <div className="aspect-[4/3] overflow-hidden">
         <img
           src={mainImage}
           alt={title || 'Artwork Image'}
-          className="w-full h-full object-contain object-top transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-full object-top transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 
@@ -33,13 +33,24 @@ const mainImage = importProductImage(type, image_folder, image);
             <span className="text-blue-400 font-semibold">${price}</span>
           ) : (null)}
           
-          <Link
+          {hide_btn === true ? (
+            <Link
             to={link}
             state={{ id, type, title, description, price, saleprice, category, image_folder, image, gallery }}
             className="bg-blue-600 text-white px-4 py-2 rounded transition-colors invisible group-hover:visible"
           >
-            View Details
+            View
           </Link>
+          ) : hide_btn ? (
+            <Link
+            to={link}
+            state={{ id, type, title, description, price, saleprice, category, image_folder, image, gallery }}
+            className="bg-blue-600 text-white px-4 py-2 rounded transition-colors"
+          >
+            View
+          </Link>
+          ): (null)}
+          
 
         </div>
       </div>

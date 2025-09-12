@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 
 import Card from './card'; // Assuming you have a Card component
 
-export default function GallerySwiper({ galleryTitle, galleryDescription, galleryData ,bgColor, textColor, customStyles}) {
+export default function GallerySwiper({ galleryTitle, galleryDescription, galleryData, bgColor, textColor, hideBtn, customStyles }) {
     return (
         <section className={`flex flex-col justify-center items-center ${bgColor} ${textColor} py-16 px-6 ` + customStyles}>
             {galleryTitle && (
@@ -17,6 +17,7 @@ export default function GallerySwiper({ galleryTitle, galleryDescription, galler
             {galleryDescription && (
                 <p className="text-center text-lg mb-8">{galleryDescription}</p>
             )}
+
             <div>
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
@@ -24,7 +25,7 @@ export default function GallerySwiper({ galleryTitle, galleryDescription, galler
                     slidesPerView={1}
                     loop={false}
                     centeredSlides={false}
-                   // autoplay={{ delay: 4000, disableOnInteraction: false }}
+                    // autoplay={{ delay: 4000, disableOnInteraction: false }}
                     //pagination={{ clickable: true }}
                     navigation
                     breakpoints={{
@@ -47,10 +48,12 @@ export default function GallerySwiper({ galleryTitle, galleryDescription, galler
                                 saleprice={art.salePrice}
                                 category={art.category}
                                 gallery={art.gallery}
-                                link={art.link} />
+                                link={art.link}
+                                hide_btn={hideBtn}
+                            />
                         </SwiperSlide>
                     ))}
-                    
+
                 </Swiper>
             </div>
         </section>

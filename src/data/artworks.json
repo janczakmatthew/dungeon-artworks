@@ -9,7 +9,7 @@
     "category": ["Horror Art", "Dead by Daylight"],
     "link": "/pdp",
     "image_folder": "the-silent-nurse",
-    "image": "8 x 10.jpg",
+    "image": "the-silent-nurse-standard.png",
     "gallery": [
       "silent-nurse-thumbnail-one.jpg",
       "silent-nurse-thumbnail-two.jpg",
@@ -29,7 +29,7 @@
     "category": ["Horror Art", "Dead by Daylight"],
     "link": "/pdp",
     "image_folder": "the-samurai-oni",
-    "image": "8 x 10.jpg",
+    "image": "the-samurai-oni.png",
     "gallery": [
       "samurai-thumbnail-one.jpg",
       "samurai-thumbnail-two.jpg",
@@ -49,7 +49,7 @@
     "category": ["Horror Art"],
     "link": "/pdp",
     "image_folder": "dark-knight-silhouette",
-    "image": "8 x 10.jpg",
+    "image": "dark-knight-silhouette.png",
     "gallery": [
       "dark-knight-thumbnail-one.jpg",
       "dark-knight-thumbnail-two.jpg",
@@ -69,7 +69,7 @@
     "category": ["Horror Art"],
     "link": "/pdp",
     "image_folder": "dark-oni",
-    "image": "8x10.jpg",
+    "image": "dark-oni.png",
     "gallery": [
       "dark-oni-thumbnail-one.jpg",
       "dark-oni-thumbnail-two.jpg",
@@ -89,7 +89,7 @@
     "category": ["Horror Art"],
     "link": "/pdp",
     "image_folder": "stained-glass-knight",
-    "image": "8 x 10.jpg",
+    "image": "stained-glass-knight.png",
     "gallery": [
       "stained-glass-knight-thumbnail-one.jpg",
       "stained-glass-knight-thumbnail-two.jpg",
