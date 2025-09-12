@@ -1,22 +1,102 @@
 [
-    {
-        "id": 1,
-        "type": "product",
-        "title": "The Silent Nurse",
-        "description": "Inspired by the haunting presence of The Nurse from Dead by Daylight, 'The Silent Nurse' is a gothic horror art piece that captures the eerie stillness and tragic elegance of one of the game’s most iconic killers. This stained glass-style silhouette evokes the oppressive atmosphere of haunted hospitals and cursed cathedrals — a perfect tribute to the silent dread she brings to every trial.",
-        "price": "6.00",
-        "salePrice": null,
-        "category": ["Horror Art", "Dead by Daylight"],
-        "link": "/pdp",
-        "image_folder": "the-silent-nurse",
-        "image": "8 x 10.jpg",
-        "gallery": [
-            "silent-nurse-thumbnail-one.jpg",
-            "silent-nurse-thumbnail-two.jpg",
-            "silent-nurse-thumbnail-three.jpg",
-            "silent-nurse-thumbnail-four.jpg"
-        ],
-        "featured": true,
-        "dateAdded": "2025-08-06"
-    }
+  {
+    "id": 1,
+    "type": "product",
+    "title": "The Silent Nurse",
+    "description": "Inspired by the haunting presence of The Nurse from Dead by Daylight, 'The Silent Nurse' is a gothic horror art piece that captures the eerie stillness and tragic elegance of one of the game’s most iconic killers. This stained glass-style silhouette evokes the oppressive atmosphere of haunted hospitals and cursed cathedrals — a perfect tribute to the silent dread she brings to every trial.",
+    "price": "6.00",
+    "salePrice": null,
+    "category": ["Horror Art", "Dead by Daylight"],
+    "link": "/pdp",
+    "image_folder": "the-silent-nurse",
+    "image": "8 x 10.jpg",
+    "gallery": [
+      "silent-nurse-thumbnail-one.jpg",
+      "silent-nurse-thumbnail-two.jpg",
+      "silent-nurse-thumbnail-three.jpg",
+      "silent-nurse-thumbnail-four.jpg"
+    ],
+    "featured": true,
+    "dateAdded": "2025-08-06"
+  },
+  {
+    "id": 2,
+    "type": "product",
+    "title": "The Samurai",
+    "description": "This digital art print features a fearsome samurai warrior with a stained-glass glow and a haunting presence — inspired by Dead by Daylight’s Oni and classic horror-meets-feudal design. It’s a bold, atmospheric piece that combines tradition with terror. Perfect for horror game fans, lovers of Japanese mythology, or anyone wanting a statement piece that blends beauty with dread.",
+    "price": "6.00",
+    "salePrice": null,
+    "category": ["Horror Art", "Dead by Daylight"],
+    "link": "/pdp",
+    "image_folder": "the-samurai-oni",
+    "image": "8 x 10.jpg",
+    "gallery": [
+      "samurai-thumbnail-one.jpg",
+      "samurai-thumbnail-two.jpg",
+      "samurai-thumbnail-three.jpg",
+      "samurai-thumbnail-four.jpg"
+    ],
+    "featured": true,
+    "dateAdded": "2025-08-06"
+  },
+  {
+    "id": 3,
+    "type": "product",
+    "title": "Dark Knight Silhouette",
+    "description": "This digital art print features a dark knight silhouette, inspired by the haunting presence of The Knight from Dead by Daylight. The piece captures the eerie stillness and tragic elegance of one of the game’s most iconic killers, evoking the oppressive atmosphere of haunted castles and cursed cathedrals.",
+    "price": "6.00",
+    "salePrice": "4.00",
+    "category": ["Horror Art"],
+    "link": "/pdp",
+    "image_folder": "dark-knight-silhouette",
+    "image": "8 x 10.jpg",
+    "gallery": [
+      "dark-knight-thumbnail-one.jpg",
+      "dark-knight-thumbnail-two.jpg",
+      "dark-knight-thumbnail-three.jpg",
+      "dark-knight-thumbnail-four.jpg"
+    ],
+    "featured": true,
+    "dateAdded": "2025-08-06"
+  },
+  {
+    "id": 4,
+    "type": "product",
+    "title": "Dark Oni",
+    "description": "This digital art print features a dark oni, inspired by the haunting presence of The Oni from Dead by Daylight. The piece captures the eerie stillness and tragic elegance of one of the game’s most iconic killers, evoking the oppressive atmosphere of haunted castles and cursed cathedrals.",
+    "price": "6.00",
+    "salePrice": null,
+    "category": ["Horror Art"],
+    "link": "/pdp",
+    "image_folder": "dark-oni",
+    "image": "8x10.jpg",
+    "gallery": [
+      "dark-oni-thumbnail-one.jpg",
+      "dark-oni-thumbnail-two.jpg",
+      "dark-oni-thumbnail-three.jpg",
+      "dark-oni-thumbnail-four.jpg"
+    ],
+    "featured": false,
+    "dateAdded": "2025-08-06"
+  },
+  {
+    "id": 5,
+    "type": "product",
+    "title": "Stained Glass Knight",
+    "description": "This digital art print features a stained glass knight, inspired by the haunting presence of The Knight from Dead by Daylight. The piece captures the eerie stillness and tragic elegance of one of the game’s most iconic killers, evoking the oppressive atmosphere of haunted castles and cursed cathedrals.",
+    "price": "6.00",
+    "salePrice": null,
+    "category": ["Horror Art"],
+    "link": "/pdp",
+    "image_folder": "stained-glass-knight",
+    "image": "8 x 10.jpg",
+    "gallery": [
+      "stained-glass-knight-thumbnail-one.jpg",
+      "stained-glass-knight-thumbnail-two.jpg",
+      "stained-glass-knight-thumbnail-three.jpg",
+      "stained-glass-knight-thumbnail-four.jpg"
+    ],
+    "featured": false,
+    "dateAdded": "2025-08-06"
+  }
 ]
