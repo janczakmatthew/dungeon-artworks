@@ -1,15 +1,35 @@
 {
   "files": {
-    "main.css": "/dungeon-artworks/static/css/main.c6387ea0.css",
-    "main.js": "/dungeon-artworks/static/js/main.b360c4e2.js",
-    "static/js/453.2af55a4f.chunk.js": "/dungeon-artworks/static/js/453.2af55a4f.chunk.js",
+    "main.css": "/dungeon-artworks/static/css/main.8ff06f61.css",
+    "main.js": "/dungeon-artworks/static/js/main.6b92ae44.js",
+    "static/js/453.3207f88b.chunk.js": "/dungeon-artworks/static/js/453.3207f88b.chunk.js",
+    "static/media/best-seller.png": "/dungeon-artworks/static/media/best-seller.4edc3dbccdacb4892091.png",
+    "static/media/fantasy.png": "/dungeon-artworks/static/media/fantasy.44045f70733372cc73e0.png",
+    "static/media/seasonal-fall.png": "/dungeon-artworks/static/media/seasonal-fall.9588b9ed90e43a5f9650.png",
+    "static/media/new-arrivals.png": "/dungeon-artworks/static/media/new-arrivals.e70f8640b8247a064992.png",
+    "static/media/digital-prints.png": "/dungeon-artworks/static/media/digital-prints.95a6e430730625293c37.png",
+    "static/media/featured-artworks.png": "/dungeon-artworks/static/media/featured-artworks.494d90eacad507c998e1.png",
+    "static/media/seasonal-summer.png": "/dungeon-artworks/static/media/seasonal-summer.00d6d495b466596c88a0.png",
+    "static/media/dbd.png": "/dungeon-artworks/static/media/dbd.f408ecd13bd8fefa5d31.png",
+    "static/media/seasonal-winter.png": "/dungeon-artworks/static/media/seasonal-winter.c41096592b6262cc8913.png",
+    "static/media/on-sale.png": "/dungeon-artworks/static/media/on-sale.33ea0806f747f3763fe2.png",
+    "static/media/horror.png": "/dungeon-artworks/static/media/horror.67f0eaf632ff2eadfcd0.png",
     "static/media/Template - 16 x 20.png": "/dungeon-artworks/static/media/Template - 16 x 20.dca90a088611f2589446.png",
+    "static/media/hero-image.png": "/dungeon-artworks/static/media/hero-image.052c1e5b7c9476cc3a48.png",
+    "static/media/stained-glass-knight.png": "/dungeon-artworks/static/media/stained-glass-knight.283df1e84494a249d745.png",
+    "static/media/dark-knight-silhouette.png": "/dungeon-artworks/static/media/dark-knight-silhouette.eb032869f0ed69d874e9.png",
+    "static/media/the-silent-nurse-standard.png": "/dungeon-artworks/static/media/the-silent-nurse-standard.621a7fb087ed869efb13.png",
+    "static/media/the-samurai-oni.png": "/dungeon-artworks/static/media/the-samurai-oni.a251f4de12018f6bdf1f.png",
+    "static/media/dark-oni.png": "/dungeon-artworks/static/media/dark-oni.980478b413cbe9a8b08a.png",
     "static/media/8x10.jpg": "/dungeon-artworks/static/media/8x10.5cdc34e647c6985202e2.jpg",
     "static/media/Template - 24 x 36.jpg": "/dungeon-artworks/static/media/Template - 24 x 36.a0999ed0dad7eb226b7b.jpg",
     "static/media/24 x 36.jpg": "/dungeon-artworks/static/media/24 x 36.00397717f7b811b8606d.jpg",
-    "static/media/homepage-hero.jpg": "/dungeon-artworks/static/media/homepage-hero.24926e453d13db31112c.jpg",
     "static/media/Template - 18 x 24.jpg": "/dungeon-artworks/static/media/Template - 18 x 24.811160eb0ce9109785b9.jpg",
+    "static/media/best-seller.jpg": "/dungeon-artworks/static/media/best-seller.6a56031d02e02f9a984d.jpg",
     "static/media/18 x 24.jpg": "/dungeon-artworks/static/media/18 x 24.304108630ec3aae9e34e.jpg",
+    "static/media/new-arrivals.jpg": "/dungeon-artworks/static/media/new-arrivals.095995631a102bf50e3d.jpg",
+    "static/media/featured.jpg": "/dungeon-artworks/static/media/featured.3beff8e1cd80152b183b.jpg",
+    "static/media/on-sale.jpg": "/dungeon-artworks/static/media/on-sale.e14a31840d3041f41eb5.jpg",
     "static/media/8 x 10.jpg": "/dungeon-artworks/static/media/8 x 10.83802467590e661546a8.jpg",
     "static/media/silent-nurse.mp4": "/dungeon-artworks/static/media/silent-nurse.8b3d88fdc6014cf66b0c.mp4",
     "static/media/Template - 11 x 14.jpg": "/dungeon-artworks/static/media/Template - 11 x 14.627daab8f5fdbfaa1607.jpg",
@@ -21,12 +41,12 @@
     "static/media/silent-nurse-thumbnail-five.jpg": "/dungeon-artworks/static/media/silent-nurse-thumbnail-five.aab09d3dcbadbdb1428f.jpg",
     "static/media/silent-nurse-thumbnail-one.jpg": "/dungeon-artworks/static/media/silent-nurse-thumbnail-one.14838d5c5f497e3eac9e.jpg",
     "index.html": "/dungeon-artworks/index.html",
-    "main.c6387ea0.css.map": "/dungeon-artworks/static/css/main.c6387ea0.css.map",
-    "main.b360c4e2.js.map": "/dungeon-artworks/static/js/main.b360c4e2.js.map",
-    "453.2af55a4f.chunk.js.map": "/dungeon-artworks/static/js/453.2af55a4f.chunk.js.map"
+    "main.8ff06f61.css.map": "/dungeon-artworks/static/css/main.8ff06f61.css.map",
+    "main.6b92ae44.js.map": "/dungeon-artworks/static/js/main.6b92ae44.js.map",
+    "453.3207f88b.chunk.js.map": "/dungeon-artworks/static/js/453.3207f88b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6387ea0.css",
-    "static/js/main.b360c4e2.js"
+    "static/css/main.8ff06f61.css",
+    "static/js/main.6b92ae44.js"
   ]
 }
