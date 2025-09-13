@@ -72,7 +72,7 @@ const ArtworkPages = () => {
             </SwiperSlide>
             <SwiperSlide>
               <ProductListRow
-                catergoryTitle='Bestsellers'
+                catergoryTitle='Best Sellers'
                 catergoryLink='/category'
                 type='bestseller'
                 size='1'

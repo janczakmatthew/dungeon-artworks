@@ -19,13 +19,17 @@ function Category() {
         filteredArtworks = filterProducts(artworks, "featured", title);
     } else if (title === 'New Arrivals') {
         filteredArtworks = filterProducts(artworks, "new", title);
+    }  else if (title === 'On Sale') {
+        filteredArtworks = filterProducts(artworks, "sale", title);
+    } else if (title === 'Best Sellers') {
+        filteredArtworks = filterProducts(artworks, "bestseller", title);
     } else {
         filteredArtworks = filterProducts(artworks, "category", title);
     }
 
-    console.log("Filtered Artworks in Category Page:", filteredArtworks);
+    //console.log("Filtered Artworks in Category Page:", filteredArtworks);
     return (
-        <div className="category-page bg-gray-800 text-white min-h-screen">
+        <div className="category-page text-white min-h-screen pb-10" >
             <HeroHeader
                 heroTitle={title ? title : 'Default Title'}
                 heroDescription={state ? state.heroDescription : 'Default Description'}
