@@ -23,6 +23,7 @@ function ProductGrid({ products }) {
                     category={product.category}
                     gallery={product.gallery}
                     link={product.link}
+                    hide_btn={true}
                 />
             ))}
         </div>
