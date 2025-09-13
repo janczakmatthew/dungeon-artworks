@@ -4,62 +4,62 @@
         "type": "category",
         "title": "New Arrivals",
         "link": "category",
-        "image": "new-arrivals.png"
+        "image": "new-arrivals-328x246.png"
     },
     {
         "id": "2",
         "type": "category",
         "title": "Best Sellers",
         "link": "/best-sellers",
-        "image": "best-seller.png"
+        "image": "best-seller-328x246.png"
     },
     {
         "id": "3",
         "type": "category",
         "title": "Featured Artworks",
         "link": "/featured-artworks",
-        "image": "featured-artworks.png"
+        "image": "featured-artwork-328x246.png"
     },
     {
         "id": "4",
         "type": "category",
         "title": "On Sale",
         "link": "/limited-editions",
-        "image": "on-sale.png"
+        "image": "sale-328x246.png"
     },
     {
         "id": "5",
         "type": "category",
         "title": "Seasonal Collections",
         "link": "/seasonal-collections",
-        "image": "seasonal-fall.png"
+        "image": "seasonal-fall-328x246.png"
     },
     {
         "id": "6",
         "type": "category",
         "title": "Horror Art",
         "link": "/horror-art",
-        "image": "horror.png"
+        "image": "horror-328x246.png"
     },
     {
         "id": "7",
         "type": "category",
         "title": "Fantasy Art",
         "link": "/fantasy-art",
-        "image": "fantasy.png"
+        "image": "fantasy-328x246.png"
     },
     {
         "id": "8",
         "type": "category",
         "title": "Digital Prints",
         "link": "/digital-prints",
-        "image": "digital-prints.png"
+        "image": "digital-prints-328x246.png"
     },
     {
         "id":"9",
         "type": "category",
         "title": "Dead by Daylight",
         "link": "/dead-by-daylight",
-        "image": "dbd.png"
+        "image": "dbd-328x246.png"
     }
 ]
