@@ -44,6 +44,9 @@ const ProductListRow = ({ catergoryTitle, catergoryLink, type, size, bgColor, te
                                 gallery={product.gallery}
                                 link={product.link}
                                 hide_btn={true}
+                                highlights={product.highlights}
+                                includes={product.includes}
+                                tags={product.tags}   
                             />
 
                         ))}
@@ -77,6 +80,9 @@ const ProductListRow = ({ catergoryTitle, catergoryLink, type, size, bgColor, te
                                 gallery={product.gallery}
                                 link={product.link}
                                 hide_btn={true}
+                                highlights={product.highlights}
+                                includes={product.includes}
+                                tags={product.tags}
                             />
 
                         ))}
@@ -110,6 +116,9 @@ const ProductListRow = ({ catergoryTitle, catergoryLink, type, size, bgColor, te
                                 gallery={product.gallery}
                                 link={product.link}
                                 hide_btn={true}
+                                highlights={product.highlights}
+                                includes={product.includes}
+                                tags={product.tags}
                             />
 
                         ))}

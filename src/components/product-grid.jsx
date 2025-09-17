@@ -24,6 +24,9 @@ function ProductGrid({ products }) {
                     gallery={product.gallery}
                     link={product.link}
                     hide_btn={true}
+                    highlights={product.highlights}
+                    includes={product.includes}
+                    tags={product.tags}
                 />
             ))}
         </div>

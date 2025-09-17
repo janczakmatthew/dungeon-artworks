@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import { importProductImage } from "../utils/import-product-image";
 
-export default function Card({ id, type, title, description, price, saleprice, category, image_folder, image, gallery, link, hide_btn, onClick }) {
+export default function Card({ id, type, title, description, price, saleprice, category, image_folder, image, gallery, link, hide_btn, highlights, includes, tags, onClick }) {
 
 const mainImage = importProductImage(type, image_folder, image);
 
@@ -36,7 +36,7 @@ const mainImage = importProductImage(type, image_folder, image);
           {hide_btn === true ? (
             <Link
             to={link}
-            state={{ id, type, title, description, price, saleprice, category, image_folder, image, gallery }}
+            state={{ id, type, title, description, price, saleprice, category, image_folder, image, gallery, highlights, includes, tags }}
             className="bg-blue-600 text-white px-4 py-2 rounded transition-colors invisible group-hover:visible"
           >
             View
@@ -44,7 +44,7 @@ const mainImage = importProductImage(type, image_folder, image);
           ) : hide_btn ? (
             <Link
             to={link}
-            state={{ id, type, title, description, price, saleprice, category, image_folder, image, gallery }}
+            state={{ id, type, title, description, price, saleprice, category, image_folder, image, gallery, highlights, includes, tags }}
             className="bg-blue-600 text-white px-4 py-2 rounded transition-colors"
           >
             View
