@@ -50,6 +50,9 @@ export default function GallerySwiper({ galleryTitle, galleryDescription, galler
                                 gallery={art.gallery}
                                 link={art.link}
                                 hide_btn={hideBtn}
+                                highlights={art.highlights}
+                                includes={art.includes}
+                                tags={art.tags}
                             />
                         </SwiperSlide>
                     ))}
