@@ -29,7 +29,7 @@ function Home() {
                 textColor='' />
 
             <HeroSection
-                bgColor=''
+                bgColor='bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 animate-gradient-x'
                 textColor=''
                 customStyles='h-screen' />
 
