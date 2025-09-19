@@ -7,7 +7,7 @@ export default function Card({ id, type, title, description, price, saleprice, c
 const mainImage = importProductImage(type, image_folder, image);
 
   return (
-    <div className="bg-gray-700 rounded-lg shadow-md overflow-hidden w-full mx-auto group hover:shadow-lg transition-shadow">
+    <div className="bg-gray-600 rounded-lg shadow-md overflow-hidden w-full mx-auto group hover:shadow-lg transition-shadow">
       <div className="aspect-[4/3] overflow-hidden">
         <img
           src={mainImage}
