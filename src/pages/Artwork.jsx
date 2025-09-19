@@ -115,11 +115,20 @@ const ArtworkPages = () => {
             customStyles="my-10" />
 
             <ProductListRow
-            catergoryTitle='Digital Prints'
+            catergoryTitle='Physical Products'
             catergoryLink='/category'
-            type='category'
+            type='physical'
             size='4'
             bgColor="bg-slate-800"
+            textColor="text-white"
+            customStyles="my-10" />
+
+            <ProductListRow
+            catergoryTitle='Digital Products'
+            catergoryLink='/category'
+            type='digital'
+            size='4'
+            bgColor="bg-slate-700"
             textColor="text-white"
             customStyles="my-10" />
 
@@ -128,7 +137,7 @@ const ArtworkPages = () => {
             catergoryLink='/category'
             type='category'
             size='4'
-            bgColor="bg-slate-700"
+            bgColor="bg-slate-800"
             textColor="text-white"
             customStyles="my-10" />
 

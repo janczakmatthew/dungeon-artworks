@@ -1,5 +1,5 @@
 export function importProductImage(type, folder, filename) {
-  if( type === 'product' ) {
+  if( type === 'physical' || type === 'digital' ) {
     return require(`../assets/products/${folder}/${filename}`);
   } else if ( type === 'category' ) {
     return require(`../assets/category/${filename}`);

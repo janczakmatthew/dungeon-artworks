@@ -23,6 +23,10 @@ function Category() {
         filteredArtworks = filterProducts(artworks, "sale", title);
     } else if (title === 'Best Sellers') {
         filteredArtworks = filterProducts(artworks, "bestseller", title);
+    } else if (title === 'Digital Products') {
+        filteredArtworks = filterProducts(artworks, "digital", title);
+    } else if (title === 'Physical Products') {
+        filteredArtworks = filterProducts(artworks, "physical", title);
     } else {
         filteredArtworks = filterProducts(artworks, "category", title);
     }
