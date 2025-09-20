@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Category from './pages/Category';
 import PDP from './pages/PDP';
+import Dashboard from './admin/pages/dashboard';
 
 function AppRoutes() {
   return (
@@ -19,6 +20,7 @@ function AppRoutes() {
           <Route path="contact" element={<Contact />} />
           <Route path="category" element={<Category />} />
           <Route path="pdp" element={<PDP />} />
+          <Route path="dashboard" element={<Dashboard />} />
           <Route path="*" element={<div>Page Not Found</div>} />
         </Route>
       </Routes>
