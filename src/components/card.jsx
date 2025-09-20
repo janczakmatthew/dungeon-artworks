@@ -2,9 +2,14 @@ import { Link } from "react-router-dom";
 
 import { importProductImage } from "../utils/import-product-image";
 
+import useCartQuantity from "../utils/cart-quantity";
+
 export default function Card({ id, type, title, description, price, saleprice, category, image_folder, image, gallery, link, hide_btn, highlights, includes, tags, onClick }) {
 
 const mainImage = importProductImage(type, image_folder, image);
+
+const { quantity, handleAddToCart, handleIncrease, handleDecrease } =
+    useCartQuantity(onClick, { id, title, price, saleprice });
 
   return (
     <div className="bg-gray-600 rounded-lg shadow-md overflow-hidden w-full mx-auto group hover:shadow-lg transition-shadow">
@@ -50,9 +55,35 @@ const mainImage = importProductImage(type, image_folder, image);
             View
           </Link>
           ): (null)}
-          
-
         </div>
+
+        {/* Shopping cart button */}
+        <div className="mt-4">
+          {quantity === 0 ? (
+            <button
+              onClick={handleAddToCart}
+              className="w-full bg-blue-600 text-white px-4 py-2 rounded transition-colors hover:bg-blue-700"
+            >
+              Add to Cart
+            </button>
+          ) : (
+            <div className="flex items-center justify-between bg-gray-700 rounded px-3 py-2">
+              <button
+                onClick={handleDecrease}
+                className="text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-600"
+              >
+                -
+              </button>
+              <span className="text-white font-medium">{quantity}</span>
+              <button
+                onClick={handleIncrease}
+                className="text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-600"
+              >
+                +
+              </button>
+            </div>
+          )}  
+          </div>
       </div>
     </div>
   );
