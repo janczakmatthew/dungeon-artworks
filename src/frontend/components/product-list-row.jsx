@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Card from "./card";
 
 //import categories from '../data/categories.json'; // Importing categories data
-import artworks from '../data/artworks.json'; // Importing artworks data
+import artworks from '../../data/artworks.json'; // Importing artworks data
 import filterProducts from "../utils/filter-product-data";
 
 const ProductListRow = ({ catergoryTitle, catergoryLink, type, size, bgColor, textColor, customStyles }) => {

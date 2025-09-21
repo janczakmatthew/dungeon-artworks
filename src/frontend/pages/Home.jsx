@@ -1,13 +1,13 @@
 //Component imports
-import GallerySwiper from "./components/gallery-swiper";
-import HeroSection from "./components/hero-section";
+import GallerySwiper from "../components/gallery-swiper";
+import HeroSection from "../components/hero-section";
 
 //Image imports 
-import heroImage from './assets/other/hero-image.png';
+import heroImage from '../../assets/other/hero-image.png';
 
 //Data imports
-import artworks from './data/artworks.json'; // Importing the artworks data
-import categories from './data/categories.json'; // Importing categories data
+import artworks from '../..//data/artworks.json'; // Importing the artworks data
+import categories from '../../data/categories.json'; // Importing categories data
 
 function Home() {
     return (
