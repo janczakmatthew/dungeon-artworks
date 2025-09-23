@@ -1,8 +1,12 @@
+import TitleSection  from "../components/titlesection";
+
 function Settings() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Settings</h1>
-      <p>This is the settings page in the admin panel.</p>
+    <div className="settings">
+      <TitleSection title="Settings" subtitle="Manage your settings here" />
+      <div className="p-4">
+        <p>Settings options will be displayed here.</p>
+      </div>
     </div>
   );
 }

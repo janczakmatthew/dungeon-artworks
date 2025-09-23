@@ -1,8 +1,12 @@
+import TitleSection from "../components/titlesection";
+
 function CategoryList() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Category List</h1>
-      <p>This is the category list page in the admin panel.</p>
+    <div className="category-list">
+      <TitleSection title="Categories" subtitle="Manage your categories here" />
+      <div className="p-4">
+        <p>List of categories will be displayed here.</p>
+      </div>
     </div>
   );
 }

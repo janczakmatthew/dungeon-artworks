@@ -1,8 +1,12 @@
+import TitleSection from "../components/titlesection";
+
 function TagList() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Tag List</h1>
-      <p>This is the tag list page in the admin panel.</p>
+    <div className="tag-list">
+      <TitleSection title="Tags" subtitle="Manage your tags here" />
+      <div className="p-4">
+        <p>List of tags will be displayed here.</p>
+      </div>
     </div>
   );
 }   
