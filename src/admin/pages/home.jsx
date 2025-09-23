@@ -24,7 +24,7 @@
       // Process counts
       const total_users = users?.length || 0;
       const total_admin = users?.filter(u => u.is_admin === true)?.length || 0;
-      const active_users = users?.filter(u => u.is_active) ?.length || 0;
+      const active_users = users?.filter(u => u.is_active)?.length || 0;
       const inactive_users = total_users - active_users;
 
       const total_products = products?.length || 0;
