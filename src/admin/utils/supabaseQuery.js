@@ -34,3 +34,9 @@ export async function fetchFromTable({ table, columns, filters = {}, orderBy }) 
     return null;
   }
 }
+
+export function withMinimumDelay(promise, delay = 500) {
+  // console.log("withMinimumDelay", promise, delay);
+  return Promise.all([promise, new Promise(res => setTimeout(res, delay))])
+    .then(([result]) => result);
+}

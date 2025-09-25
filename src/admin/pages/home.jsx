@@ -1,20 +1,26 @@
-  import { fetchFromTable } from '../utils/supabaseQuery';
+import { fetchFromTable } from '../utils/supabaseQuery';
 
-  import TitleSection from '../components/titlesection';
-  import Card from '../components/card';
+import TitleSection from '../components/titlesection';
+import Card from '../components/card';
 
-  import { useEffect, useState } from "react"
-  import { LuUser as User, LuTags as Tags, LuShoppingCart as Orders, LuLink as Links} from "react-icons/lu"
+import { useEffect, useState } from "react"
+import { LuUser as User, LuTags as Tags, LuShoppingCart as Orders, LuLink as Links } from "react-icons/lu"
 
-  function AdminHome() {
 
-    const [stats, setStats] = useState({
-      users: 0,
-      products: 0,
-      categories: 0,
-    })
+function AdminHome() {
 
-    useEffect(() => {
+  const [stats, setStats] = useState({
+    users: 0,
+    products: 0,
+    categories: 0,
+  })
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+
+    setLoading(true);
+
     async function getStats() {
       // Fetch counts from Supabase tables
       const users = await fetchFromTable({ table: 'profiles', columns: 'id, is_admin, is_owner, is_active' });
@@ -51,42 +57,44 @@
         weekly_orders,
         pending_orders,
       });
+
+      setLoading(false);
     }
 
     getStats();
   }, []);
 
 
-    return (
-      <div className="admin-home">
-        <TitleSection title="Dungeon Artworks Dashboard" subtitle="Manage your application settings and data" />
-        <div className="content p-4">
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-            <Card title="Users" icon={User}  value={[
-              {label: 'Total', value: stats.total_users},
-              {label: 'Admin', value: stats.total_admin},
-              {label: 'Active', value: stats.active_users},
-              {label: 'Inactive', value: stats.inactive_users},
-            ]} /> 
-            <Card title="Products" icon={Tags} value={[
-              {label: 'Total', value: stats.total_products},
-              {label: 'Digital', value: stats.digital_products},
-              {label: 'Physical', value: stats.physical_products},
+  return (
+    <div className="admin-home">
+      <TitleSection title="Dungeon Artworks Dashboard" subtitle="Manage your application settings and data" />
+      <div className="content p-4">
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+            <Card title="Users" icon={User} loading={loading} value={[
+              { label: 'Total', value: stats.total_users },
+              { label: 'Admin', value: stats.total_admin },
+              { label: 'Active', value: stats.active_users },
+              { label: 'Inactive', value: stats.inactive_users },
             ]} />
-            <Card title="Orders" icon={Orders} value={[
-              {label: 'Total', value: stats.total_orders},
-              {label: 'This week', value: stats.weekly_orders},
-              {label: 'Pending', value: stats.pending_orders},
-            ]} />
-            <Card title="Quick Links" icon={Links} value={[
-              {label: 'Manage Users', value: 'Go to Users', link: '/admin/users'},
-              {label: 'Manage Products', value: 'Go to Products', link: '/admin/products'},
-              {label: 'Manage Orders', value: 'Go to Orders', link: '/admin/orders'},
-            ]} card_container_classes="" />
-          </div>
+          <Card title="Products" icon={Tags} loading={loading} value={[
+            { label: 'Total', value: stats.total_products },
+            { label: 'Digital', value: stats.digital_products },
+            { label: 'Physical', value: stats.physical_products },
+          ]} />
+          <Card title="Orders" icon={Orders} loading={loading} value={[
+            { label: 'Total', value: stats.total_orders },
+            { label: 'This week', value: stats.weekly_orders },
+            { label: 'Pending', value: stats.pending_orders },
+          ]} />
+          <Card title="Quick Links" icon={Links} loading={loading} value={[
+            { label: 'Manage Users', value: 'Go to Users', link: '/admin/users' },
+            { label: 'Manage Products', value: 'Go to Products', link: '/admin/products' },
+            { label: 'Manage Orders', value: 'Go to Orders', link: '/admin/orders' },
+          ]} card_container_classes="" />
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
 
-  export default AdminHome;
+export default AdminHome;
