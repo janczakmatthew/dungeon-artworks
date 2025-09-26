@@ -17,7 +17,7 @@ import TagList from "./admin/pages/taglist";
 import OrderList from "./admin/pages/orderlist";
 import UserList from "./admin/pages/userlist";
 // import ReportList from './admin/pages/reportlist';
-import Settings from "./admin/pages/settings";
+import Settings from "./admin/pages/settings/settings";
 
 import Login from "./frontend/pages/Login"; // <-- your login page
 import ProtectedRoute from "./admin/components/protectedroute";
