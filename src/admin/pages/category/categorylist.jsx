@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { fetchFromTable, withMinimumDelay } from "../utils/supabaseQuery";
+import { fetchFromTable, withMinimumDelay } from "../../utils/supabaseQuery";
 
-import TitleSection from "../components/titlesection";
-import Table from "../components/table";
+import TitleSection from "../../components/titlesection";
+import Table from "../../components/table";
 
 function CategoryList() {
 

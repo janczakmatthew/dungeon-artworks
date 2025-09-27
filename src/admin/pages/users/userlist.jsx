@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
-import { fetchFromTable, withMinimumDelay } from "../utils/supabaseQuery"
-import { getUserRole } from "../utils/dataHelpers";
+import { fetchFromTable, withMinimumDelay } from "../../utils/supabaseQuery"
+import { getUserRole } from "../../utils/dataHelpers";
 
-import TitleSection from "../components/titlesection";
-import Table from "../components/table";
+import TitleSection from "../../components/titlesection";
+import Table from "../../components/table";
 
 function UserList() {
 

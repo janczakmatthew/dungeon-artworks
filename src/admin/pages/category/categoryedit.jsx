@@ -1,4 +1,4 @@
-import TitleSection from "../components/titlesection";  
+import TitleSection from "../../components/titlesection";  
 
 function CategoryEdit() {
   return ( 

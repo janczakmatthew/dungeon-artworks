@@ -112,3 +112,72 @@ export function withMinimumDelay(promise, delay = 500) {
   return Promise.all([promise, new Promise(res => setTimeout(res, delay))])
     .then(([result]) => result);
 }
+
+/**
+ * Fecth Media
+ */
+
+export async function fetchMedia(bucket= '', folder = '') {
+  try {
+    const { data, error } = await supabase.storage
+      .from(bucket)
+      .list(folder, { limit: 100 });
+
+    if (error) {
+      console.error('Error listing media:', error);
+      return [];
+    }
+
+    if (!data || data.length === 0) {
+      console.log('No files found in folder:', folder);
+      return [];
+    }
+
+    // Get signed URLs for each file
+    const filesWithUrls = await Promise.all(
+      data.map(async (file) => {
+        const { data: signedUrlData, error: urlError } = await supabase.storage
+          .from('logos')
+          .createSignedUrl(`${folder}/${file.name}`, 60); // URL valid for 60 seconds
+
+        if (urlError) {
+          console.error('Error creating signed URL for', file.name, urlError);
+          return null;
+        }
+
+        return {
+          name: file.name,
+          url: signedUrlData.signedUrl,
+        };
+      })
+    );
+
+    return filesWithUrls.filter(f => f !== null); // remove any errors
+  } catch (err) {
+    console.error('Unexpected error fetching media:', err);
+    return [];
+  }
+}
+
+
+/** 
+ * Upload files
+ */
+export async function uploadMedia(file, folder = '') {
+  const fileName = `${Date.now()}_${file.name}`;
+  const { data, error } = await supabase.storage
+    .from('media')
+    .upload(`${folder}/${fileName}`, file);
+
+  if (error) throw error;
+  return supabase.storage.from('media').getPublicUrl(`${folder}/${fileName}`).publicUrl;
+}
+
+/**
+ * Delete Files
+ */
+export async function deleteMedia(filePath) {
+  const { error } = await supabase.storage.from('media').remove([filePath]);
+  if (error) throw error;
+  return true;
+}

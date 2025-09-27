@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { LuHouse, LuTag, LuGrid2X2, LuTags, LuShoppingCart, LuUser, LuSettings } from 'react-icons/lu';
+import { LuHouse, LuTag, LuGrid2X2, LuTags, LuShoppingCart, LuUser, LuSettings, LuImage } from 'react-icons/lu';
 
 
 export default function Sidebar() {
@@ -38,6 +38,12 @@ export default function Sidebar() {
                     <Link to="/admin/orders" className="flex flex-row items-center w-full px-4 py-2 hover:bg-gray-700 transition">
                     <LuShoppingCart className="align-center mr-2" />
                     Orders
+                    </Link>
+                </li>
+                <li className="mb-4">
+                    <Link to="/admin/media_libary" className="flex flex-row items-center w-full px-4 py-2 hover:bg-gray-700 transition">
+                    <LuImage className="align-center mr-2" />
+                    Media Libary
                     </Link>
                 </li>
                 <li className="mb-4">           

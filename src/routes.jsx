@@ -11,11 +11,12 @@ import PDP from "./frontend/pages/PDP";
 
 import Admin from "./admin/pages/home";
 import AdminLayout from "./admin/AdminLayout";
-import ProductList from "./admin/pages/productlist";
-import CategoryList from "./admin/pages/categorylist";
-import TagList from "./admin/pages/taglist";
-import OrderList from "./admin/pages/orderlist";
-import UserList from "./admin/pages/userlist";
+import ProductList from "./admin/pages/products/productlist";
+import CategoryList from "./admin/pages/category/categorylist";
+import TagList from "./admin/pages/tags/taglist";
+import OrderList from "./admin/pages/orders/orderlist";
+import UserList from "./admin/pages/users/userlist";
+import MediaLibrary from "./admin/pages/media_library/media_library";
 // import ReportList from './admin/pages/reportlist';
 import Settings from "./admin/pages/settings/settings";
 
@@ -47,6 +48,7 @@ function AppRoutes() {
             <Route path="categories" element={<CategoryList />} />
             <Route path="tags" element={<TagList />} />
             <Route path="orders" element={<OrderList />} />
+            <Route path="media_libary" element={<MediaLibrary/>} />
             <Route path="users" element={<UserList />} />
             {/* <Route path="reports" element={<ReportList />} /> */}
             <Route path="settings" element={<Settings />} />
