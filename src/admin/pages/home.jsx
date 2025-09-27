@@ -1,9 +1,10 @@
+import { useEffect, useState } from "react"
 import { fetchFromTable } from '../utils/supabaseQuery';
 
 import TitleSection from '../components/titlesection';
 import Card from '../components/card';
 
-import { useEffect, useState } from "react"
+
 import { LuUser as User, LuTags as Tags, LuShoppingCart as Orders, LuLink as Links } from "react-icons/lu"
 
 
