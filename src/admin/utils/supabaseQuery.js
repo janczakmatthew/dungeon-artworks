@@ -117,7 +117,7 @@ export function withMinimumDelay(promise, delay = 500) {
  * Fecth Media
  */
 
-export async function fetchMedia(bucket= '', folder = '') {
+export async function fetchMedia(bucket = 'other', folder = '') {
   try {
     const { data, error } = await supabase.storage
       .from(bucket)
@@ -137,7 +137,7 @@ export async function fetchMedia(bucket= '', folder = '') {
     const filesWithUrls = await Promise.all(
       data.map(async (file) => {
         const { data: signedUrlData, error: urlError } = await supabase.storage
-          .from('logos')
+          .from('other')
           .createSignedUrl(`${folder}/${file.name}`, 60); // URL valid for 60 seconds
 
         if (urlError) {
@@ -160,18 +160,42 @@ export async function fetchMedia(bucket= '', folder = '') {
 }
 
 
-/** 
- * Upload files
+/**
+ * Upload files to Supabase Storage
+ * @param {File} file - The file to upload
+ * @param {string} bucket - The Supabase storage bucket
+ * @param {string} folder - The folder inside the bucket
+ * @param {string} fixedName - Optional fixed filename (favicon.ico, logo.png)
  */
-export async function uploadMedia(file, folder = '') {
-  const fileName = `${Date.now()}_${file.name}`;
-  const { data, error } = await supabase.storage
-    .from('media')
-    .upload(`${folder}/${fileName}`, file);
+export async function uploadMedia(file, bucket = 'other', folder = '', fixedName = null) {
+  // Use fixed name if provided, otherwise timestamp
+  const extension = file.name.split('.').pop();
+  const originalName = file.name.replace(/\.[^/.]+$/, ""); // remove extension
+  const fileName = fixedName ? fixedName : `${originalName}_${Date.now()}.${extension}`;
+  const uploadPath = folder ? `${folder}/${fileName}` : fileName;
 
-  if (error) throw error;
-  return supabase.storage.from('media').getPublicUrl(`${folder}/${fileName}`).publicUrl;
+  console.log(`Uploading file to bucket: ${bucket}, path: ${uploadPath}`);
+
+  const { data, error } = await supabase.storage
+    .from(bucket)
+    .upload(uploadPath, file, {
+      upsert: true, // allow overwrite
+    });
+
+  if (error) {
+    console.error("Error uploading file:", error);
+    throw error;
+  }
+
+  // Correct way to get public URL
+  const { data: publicUrlData } = supabase.storage.from(bucket).getPublicUrl(uploadPath);
+  const publicUrl = publicUrlData.publicUrl;
+
+  //console.log(`Retrieved public URL: ${publicUrl}`);
+
+  return publicUrl;
 }
+
 
 /**
  * Delete Files

@@ -6,7 +6,7 @@ function MediaLibrary() {
         <div className="Media Library">
             <TitleSection title="Media Library" subtitle="Manage your users here" />
             <div className="p-4">
-                <MLibrary bucket='logos' />
+                <MLibrary/>
 
             </div>
         </div>
