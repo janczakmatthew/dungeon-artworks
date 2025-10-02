@@ -13,22 +13,24 @@ function MLibrary({ bucket = "other", folder = "" }) {
     const showLoading = DelayedLoading(loading, 1000);
 
     useEffect(() => {
-
         setLoading(true);
 
         async function loadMedia() {
             const media = await fetchMedia(bucket, folder);
-            // console.log('Fetched media:', media);
-            setFiles(media);
-        }
-        loadMedia();
+            const filtered = (media || []).filter(
+                file => file.name !== ".emptyFolderPlaceholder"
+            );
 
-        setLoading(false);
-    }, []);
+            setFiles(filtered);
+            setLoading(false);
+        }
+
+        loadMedia();
+    }, [bucket, folder]);
 
     if (showLoading) {
         return (
-            <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-6">
+            <div className="skeleton grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-6">
                 {Array.from({ length: 6 }).map((_, i) => (
                     <div
                         key={i}
@@ -54,6 +56,7 @@ function MLibrary({ bucket = "other", folder = "" }) {
 
     return (
         <div>
+            {console.log(files)}
             {files.length === 0 && <p>No files found.</p>}
             <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-10">
                 {files.map((file) => (
