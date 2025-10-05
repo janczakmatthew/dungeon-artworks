@@ -4,6 +4,7 @@ import Tabs from "../../components/tabs"
 import AnalyticsTab from "./tabs/AnalyticsTab";
 import PaymentsTab from "./tabs/PaymentsTab";
 import SiteInfoTab from "./tabs/SiteInfoTab";
+import TemplatesTab from "./tabs/TemplatesTab";
 
 function Settings() {
 
@@ -20,6 +21,10 @@ function Settings() {
       label: "Payments",
       content: <PaymentsTab />,
     },
+    {
+      label: "Templates",
+      content: <TemplatesTab />
+    }
     
   ];
 
